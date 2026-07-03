@@ -8,31 +8,29 @@ verified by character count. Rationale for each choice is at the bottom.
 ## 1. App Name (Title) — 30 characters max
 
 ```
-FamilyKeepsake: Kids Art Saver
+FamilyKeepsake: Kids Creations
 ```
 
 **30 / 30 characters.**
 
 The title is the single strongest ranking field. `FamilyKeepsake` carries the brand
-(and the high-value tokens *family* and *keepsake*); the suffix adds the head terms
-parents actually type — *kids*, *art*, *saver* — without keyword-stuffing that would
-risk App Review rejection.
+(and the high-value tokens *family* and *keepsake*); *Kids Creations* tells the true
+breadth of the story — art, certificates, reports, builds — and matches the website's
+hero tag ("The catalogue for everything your kids create"). The high-volume *art*
+cluster isn't lost: it moves to the subtitle, which Apple indexes just as heavily.
 
 ## 2. Subtitle — 30 characters max
 
 ```
-Scan school memories & awards
+Art, awards & school memories
 ```
 
 **29 / 30 characters.**
 
 The subtitle is indexed as heavily as the title, so it must not repeat title words.
-This adds four fresh high-intent tokens: *scan*, *school*, *memories*, *awards* —
-and doubles as a benefit statement under the app name.
-
-Alternate (if you'd rather lead with organisation than scanning):
-`Organize art, awards & reports` (30/30 — but note it repeats *art* from the title,
-wasting one indexed slot).
+This adds four fresh high-intent tokens — *art*, *awards*, *school*, *memories* —
+and reads as a plain-language list of what goes in the app, sitting directly under
+"Kids Creations".
 
 ## 3. Promotional Text — 170 characters max
 
@@ -55,18 +53,19 @@ Photograph the painting, the certificate, the Lego build. It's named, dated and 
 ## 4. Keywords — 100 characters max
 
 ```
-child,artwork,drawing,painting,craft,certificate,report,archive,portfolio,organizer,schoolwork,vault
+child,artwork,drawing,painting,craft,certificate,report,archive,portfolio,organizer,scan,saver,vault
 ```
 
 **100 / 100 characters.**
 
 Rules applied: comma-separated with no spaces (spaces waste characters); no word
-already indexed from the title or subtitle (*family, keepsake, kids, art, saver,
-scan, school, memories, awards* are all free rankings — repeating them here would
+already indexed from the title or subtitle (*family, keepsake, kids, creations,
+art, awards, school, memories* are all free rankings — repeating them here would
 waste a third of the field); no "app", no plurals of words already present (Apple
 matches singular/plural). Apple builds combinations across all three fields, so
-this set also earns phrases like "kids artwork organizer", "child art portfolio",
-"school certificate scanner", "kids memory vault", "schoolwork archive".
+this set also earns phrases like "kids art organizer", "child artwork portfolio",
+"school certificate scanner", "kids memory vault", "school report archive",
+"kids art saver".
 
 ## 5. Description — 4,000 characters max
 
@@ -133,12 +132,13 @@ duplicated words across the three indexed fields:
 
 | Cluster | Covered by |
 |---|---|
-| kids art / kids artwork / child art | title + keywords |
-| kids art organizer / storage / saver | title + keywords |
+| kids art / kids artwork / child art | title + subtitle + keywords |
+| kids art organizer / saver / storage | title + subtitle + keywords |
+| kids creations / child creations | title |
 | school memories / memory keeper | subtitle + keywords |
 | certificate & award scanner | subtitle + keywords |
-| school report / schoolwork archive | keywords |
-| kids art portfolio | title + keywords |
+| school report archive | subtitle + keywords |
+| kids art portfolio | title + subtitle + keywords |
 
 **Launch-timing lever.** Promotional text is editable without a release — on launch
 day it should ride the iOS 27 / Apple Intelligence news cycle (copy above), then
