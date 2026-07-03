@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | FamilyKeepsake</title>
+  <meta name="description" content="FamilyKeepsake support." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="app-icon-small.png" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #3574E8;
+      --bg:          #F3F5F9;
+      --card:        #FFFFFF;
+      --text:        #1A1F30;
+      --text-sec:    #586273;
+      --text-muted:  #8A93A4;
+      --border:      #DCE2EA;
+      --r-md: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-text-size-adjust: 100%; }
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(243,245,249,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px; height: 56px;
+      display: flex; align-items: center;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 7px; }
+    .nav-brand span b { color: var(--navy); }
+
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .sub { font-size: 15px; color: var(--text-sec); margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin-top: 32px; margin-bottom: 10px; }
+    p { color: var(--text-sec); margin-bottom: 14px; }
+    ul { color: var(--text-sec); margin: 0 0 14px 20px; }
+    li { margin-bottom: 6px; }
+
+    .contact-box {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md);
+      padding: 20px; margin-bottom: 8px;
+      font-size: 15px; color: var(--text-sec); line-height: 1.6;
+    }
+    .contact-box strong { color: var(--text); }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 20px; text-align: center; font-size: 13px; color: var(--text-muted); }
+    footer a { color: var(--text-sec); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="app-icon-small.png" alt="FamilyKeepsake" />
+    <span>Family<b>Keepsake</b></span>
+  </a>
+</nav>
+
+<main>
+  <h1>Support</h1>
+  <p class="sub">Stuck, puzzled, or have an idea? We'd genuinely like to hear it.</p>
+
+  <div class="contact-box">
+    <strong>Email:</strong> <a href="mailto:support@familykeepsake.app">support@familykeepsake.app</a><br/>
+    We aim to reply within two working days (New Zealand time).
+  </div>
+
+  <h2>Quick answers</h2>
+  <ul>
+    <li><strong>Where are my files?</strong> Open the Files app → iCloud Drive → FamilyKeepsake. Every keepsake is there as an ordinary photo or PDF, foldered by category. (In the app: Settings → Your archive → Show in Files.)</li>
+    <li><strong>The AI says it's unavailable.</strong> FamilyKeepsake reads with Apple Intelligence, which must be enabled in Settings → Apple Intelligence &amp; Siri, on a supported device (iPhone 15 Pro or newer, or an M-series iPad). You can always fill in the card by hand.</li>
+    <li><strong>A save failed saying storage is full.</strong> Your device's storage has run out — free some space and tap Save again. Nothing you captured is lost while the review card is open.</li>
+    <li><strong>Sync between devices isn't happening.</strong> Check both devices are signed into the same Apple Account with iCloud Drive enabled, then give it a few minutes — iCloud sets its own pace.</li>
+    <li><strong>Restore a purchase.</strong> Settings (in the app) → Back-catalogue unlock → Restore purchase, signed in with the Apple Account that bought it.</li>
+  </ul>
+
+  <p>More questions are answered in the <a href="/#faq">FAQ</a>.</p>
+</main>
+
+<footer>
+  <a href="/">&larr; Back to FamilyKeepsake</a>
+</footer>
+
+</body>
+</html>

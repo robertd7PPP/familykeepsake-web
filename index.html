@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FamilyKeepsake | Everything your kids make, kept — catalogued by a photo</title>
+  <meta name="description" content="Point your camera at the painting, certificate or Lego build. FamilyKeepsake reads who made it, what it is and when — on your iPhone, nothing uploaded — and files it in your family's own iCloud. One-time purchase, no subscription." />
+  <meta property="og:title" content="FamilyKeepsake — Everything they make, kept." />
+  <meta property="og:description" content="Take a photo of anything your kids make. FamilyKeepsake reads who, what and when — on device — and files it in your family's own iCloud. No subscription." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.familykeepsake.app/app-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:url" content="https://www.familykeepsake.app" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FamilyKeepsake — Everything they make, kept." />
+  <meta name="twitter:description" content="Take a photo of anything your kids make. FamilyKeepsake reads who, what and when — on device — and files it in your family's own iCloud. No subscription." />
+  <meta name="twitter:image" content="https://www.familykeepsake.app/app-icon.png" />
+  <link rel="icon" href="app-icon-small.png" />
+  <link rel="canonical" href="https://www.familykeepsake.app/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.familykeepsake.app/#organization",
+        "name": "FamilyKeepsake",
+        "url": "https://www.familykeepsake.app/",
+        "logo": "https://www.familykeepsake.app/app-icon.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.familykeepsake.app/#website",
+        "url": "https://www.familykeepsake.app/",
+        "name": "FamilyKeepsake",
+        "publisher": { "@id": "https://www.familykeepsake.app/#organization" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://www.familykeepsake.app/#app",
+        "name": "FamilyKeepsake",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Photograph anything your kids make and FamilyKeepsake reads who made it, what it is and when — on device — and files it as a real photo in your family's own iCloud. Free to capture; one-time unlock for bulk import. No subscription.",
+        "url": "https://www.familykeepsake.app/",
+        "publisher": { "@id": "https://www.familykeepsake.app/#organization" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "NZD" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.familykeepsake.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where are my kids' keepsakes stored?",
+            "acceptedAnswer": { "@type": "Answer", "text": "In your family's own iCloud Drive, as ordinary photos and PDFs with readable names, organised into folders by category. FamilyKeepsake has no servers — we couldn't hold your photos if we wanted to." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the AI upload my photos anywhere?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. The reading happens on your iPhone or iPad using Apple Intelligence. It works in flight mode. Nothing is sent to us or anyone else." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I stop using FamilyKeepsake?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Everything stays. Your keepsakes are ordinary files in your own iCloud Drive — named, foldered, and readable by any app. The archive outlives the app, by design." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is FamilyKeepsake a subscription?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No — and it never will be. Capturing one creation at a time is free forever. A single NZ$29.99 purchase unlocks the bulk import lanes. There is no subscription because there are no servers to pay for." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is free, and what does the unlock buy?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Free forever: capture with the camera or document scanner, photos of one creation, full AI reading, unlimited keepsakes, search, Rewind and voice notes. The one-time unlock opens the bulk lanes: import whole albums from Photos, import school-report PDFs, and share into the app from anywhere." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which devices does FamilyKeepsake need?",
+            "acceptedAnswer": { "@type": "Answer", "text": "FamilyKeepsake is built on Apple Intelligence, so it needs iOS 27 on an iPhone 15 Pro or newer, or an iPad with an M-series chip." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does it know which of my kids made something?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Kids sign their work. FamilyKeepsake reads the name — even a wobbly one in a corner — and matches it against your family. A joint creation can belong to more than one child." }
+          },
+          {
+            "@type": "Question",
+            "name": "What about school reports?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Import them as PDFs. The real multi-page PDF is archived in your iCloud Drive, every page is read, and school, year and term are filled in from your family's school timeline." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if it reads something wrong?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You always see the card before it saves, and every field can be fixed with a tap. Filenames are never built from AI guesses — only from confirmed facts: child, type and date." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #3574E8;
+      --navy-light:  #EAF1FE;
+      --amber:       #F5A623;
+      --amber-light: #FEF3C7;
+      --amber-text:  #2D1F08;
+      --teal:        #2ABFBF;
+      --coral:       #F26B5B;
+      --success:     #22C55E;
+      --slate:       #C8D2DE;   /* the app's own surface — used inside the phones */
+      --slate-card:  #DCE3EC;
+      --stage:       #131826;   /* Rewind's dark stage */
+      --bg:          #F3F5F9;
+      --card:        #FFFFFF;
+      --text:        #1A1F30;
+      --text-sec:    #586273;
+      --text-muted:  #8A93A4;
+      --border:      #DCE2EA;
+      --border-lt:   #EBEFF4;
+      --shadow:      0 1px 4px rgba(20,32,50,0.07);
+      --shadow-md:   0 4px 16px rgba(20,32,50,0.10);
+      --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-xl: 24px; --r-full: 9999px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; -webkit-text-size-adjust: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--amber-light); }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(243,245,249,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 7px; }
+    .nav-brand span b { color: var(--navy); }
+    .nav-links { display: none; }
+    .nav-cta {
+      background: var(--amber); color: var(--amber-text);
+      padding: 9px 16px; border-radius: var(--r-md);
+      font-size: 13px; font-weight: 700;
+      box-shadow: 0 4px 16px rgba(245,166,35,0.35);
+    }
+
+    /* ── Coming-soon chip ── */
+    .soon-chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--amber); color: var(--amber-text);
+      padding: 12px 22px; border-radius: var(--r-md);
+      font-size: 15px; font-weight: 700;
+      box-shadow: 0 6px 20px rgba(245,166,35,0.4);
+    }
+    .soon-chip small { font-weight: 600; opacity: 0.75; }
+
+    /* ── Hero ── */
+    .hero { max-width: 1100px; margin: 0 auto; padding: 48px 20px 52px; text-align: center; }
+    .hero-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--navy); background: var(--navy-light); padding: 5px 12px; border-radius: var(--r-full); display: inline-block; margin-bottom: 18px; text-transform: uppercase; }
+    .hero h1 { font-size: 34px; font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .hero h1 em { color: var(--navy); font-style: normal; }
+    .hero p { font-size: 16px; color: var(--text-sec); line-height: 1.65; margin-bottom: 24px; }
+    .cta-row { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+    .btn-secondary-link { font-size: 15px; font-weight: 600; color: var(--navy); }
+    .trust-line { font-size: 13px; color: var(--text-muted); line-height: 1.5; max-width: 340px; margin: 0 auto 8px; }
+    .product-clarify { font-size: 12px; color: var(--text-muted); line-height: 1.5; max-width: 400px; margin: 0 auto; font-style: italic; }
+    .hero-phones { display: flex; flex-direction: column; align-items: center; gap: 28px; margin-top: 40px; }
+    .hero-phone-col { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .phone-caption { font-size: 12px; color: var(--text-muted); max-width: 220px; text-align: center; line-height: 1.5; }
+
+    /* ── Phone shell ── */
+    .phone {
+      width: 250px; background: #10131f; border-radius: 40px;
+      padding: 9px; flex-shrink: 0;
+      box-shadow: 0 32px 64px rgba(16,19,31,0.25), 0 0 0 1px rgba(0,0,0,0.3);
+    }
+    .phone-inner {
+      background: var(--slate); border-radius: 33px; overflow: hidden;
+      height: 520px; display: flex; flex-direction: column; text-align: left;
+    }
+    .phone-inner.dark { background: var(--stage); }
+    .p-notch { height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .p-notch-pill { width: 78px; height: 9px; background: #10131f; border-radius: 999px; }
+
+    /* ── Phone UI: review card ── */
+    .p-title { font-size: 15px; font-weight: 700; color: var(--text); text-align: center; padding: 2px 0 8px; }
+    .p-body { flex: 1; overflow: hidden; padding: 0 12px 12px; display: flex; flex-direction: column; gap: 8px; }
+    .p-art {
+      border-radius: 14px; overflow: hidden; position: relative; height: 148px; flex-shrink: 0;
+      box-shadow: var(--shadow); border: 0.5px solid rgba(26,31,48,0.15);
+    }
+    .art-painting {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 80% 20%, #FFD34D 0 13%, transparent 14%),
+        linear-gradient(to bottom, #AEDCF2 0 70%, #93D07E 70% 100%);
+    }
+    .art-house { position: absolute; left: 24%; bottom: 20%; width: 64px; height: 46px; background: #F2917E; border-radius: 3px; }
+    .art-roof { position: absolute; left: 24%; bottom: calc(20% + 46px); width: 0; height: 0; border-left: 32px solid transparent; border-right: 32px solid transparent; border-bottom: 26px solid #E85D48; }
+    .art-door { position: absolute; left: calc(24% + 24px); bottom: 20%; width: 16px; height: 24px; background: #8A5A3B; border-radius: 3px 3px 0 0; }
+    .art-sig { position: absolute; right: 8px; bottom: 6px; font-family: "Bradley Hand", "Comic Sans MS", cursive; font-size: 13px; color: #4A3AB5; transform: rotate(-4deg); }
+    .p-field {
+      background: var(--slate-card); border-radius: 11px; padding: 9px 11px;
+      display: flex; align-items: center; gap: 9px;
+      border: 0.5px solid rgba(26,31,48,0.08);
+    }
+    .p-field-label { font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); width: 38px; flex-shrink: 0; }
+    .p-field-value { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.35; }
+    .p-field-value.desc { font-weight: 500; }
+    .p-bubble { width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .p-chip { font-size: 11px; font-weight: 600; color: var(--navy); background: var(--navy-light); padding: 3px 9px; border-radius: var(--r-full); }
+    .p-read { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 600; color: var(--text-muted); padding: 0 2px; }
+    .p-read .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); flex-shrink: 0; }
+    .p-save {
+      margin-top: auto; background: var(--navy); color: white; text-align: center;
+      font-size: 13px; font-weight: 700; padding: 11px; border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(53,116,232,0.35);
+    }
+
+    /* ── Phone UI: Rewind ── */
+    .rw-head { padding: 4px 16px 0; }
+    .rw-date { font-size: 19px; font-weight: 800; color: white; }
+    .rw-count { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.45); margin-top: 2px; }
+    .rw-stage { flex: 1; position: relative; display: flex; align-items: center; justify-content: center; }
+    .rw-card { position: absolute; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,0.45); }
+    .rw-card.back2 { width: 128px; height: 150px; transform: translateY(-84px) scale(0.92); opacity: 0.35; }
+    .rw-card.back1 { width: 148px; height: 172px; transform: translateY(-46px) scale(0.96); opacity: 0.6; }
+    .rw-card.front { width: 168px; height: 208px; transform: translateY(6px); display: flex; flex-direction: column; }
+    .rw-art { flex: 1; position: relative; background: linear-gradient(to bottom, #1B2340 0 100%); overflow: hidden; }
+    .rw-art .star { position: absolute; width: 3px; height: 3px; background: #fff; border-radius: 50%; opacity: 0.8; }
+    .rw-moon { position: absolute; top: 14px; right: 16px; width: 26px; height: 26px; border-radius: 50%; background: #F5EFC9; }
+    .rw-rocket { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%) rotate(-8deg); width: 34px; height: 62px; background: #E85D48; border-radius: 17px 17px 6px 6px; }
+    .rw-rocket::before { content: ""; position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 14px; height: 14px; border-radius: 50%; background: #AEDCF2; border: 3px solid #C43F2C; }
+    .rw-rocket::after { content: ""; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 14px solid var(--amber); }
+    .rw-cap { background: white; padding: 8px 10px; }
+    .rw-cap-title { font-size: 11px; font-weight: 700; color: var(--text); }
+    .rw-cap-sub { font-size: 9px; color: var(--text-sec); margin-top: 1px; }
+    .rw-rail { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 7px; text-align: right; }
+    .rw-rail span { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.35); font-variant-numeric: tabular-nums; }
+    .rw-rail span.on { color: var(--amber); }
+    .rw-play { align-self: center; margin-bottom: 16px; width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; }
+    .rw-play::before { content: ""; width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 12px solid white; margin-left: 3px; }
+
+    /* ── Section common ── */
+    section { border-top: 1px solid var(--border-lt); }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 52px 20px; }
+    .section-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--navy); text-transform: uppercase; margin-bottom: 12px; }
+    .section-h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 20px; }
+    .section-lede { font-size: 16px; color: var(--text-sec); line-height: 1.65; max-width: 620px; }
+
+    /* ── Trust strip ── */
+    .trust-strip { background: var(--card); }
+    .trust-strip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .trust-strip-card { background: var(--bg); border: 1px solid var(--border-lt); border-radius: var(--r-lg); padding: 16px; }
+    .trust-strip-card svg { width: 22px; height: 22px; color: var(--navy); margin-bottom: 8px; }
+    .trust-strip-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+    .trust-strip-card p { font-size: 13px; color: var(--text-sec); line-height: 1.45; }
+
+    /* ── Problem ── */
+    .problem { background: var(--bg); }
+    .problem .section-h2 { margin-bottom: 16px; }
+    .problem p { font-size: 16px; color: var(--text-sec); line-height: 1.65; margin-bottom: 16px; max-width: 640px; }
+    .problem p.bold { font-weight: 600; color: var(--text); }
+    .problem ul { list-style: none; margin-top: 8px; display: flex; flex-direction: column; gap: 8px; max-width: 640px; }
+    .problem ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--text); }
+
+    /* ── How it works ── */
+    .how { background: var(--navy-light); }
+    .steps { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .step { background: white; border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow); }
+    .step-n { font-family: ui-monospace, monospace; font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .step p { font-size: 14px; color: var(--text-sec); line-height: 1.55; }
+
+    /* ── Feature sections ── */
+    .feature-sec { background: var(--card); }
+    .feature-sec.alt { background: var(--bg); }
+    .feature-row { display: flex; flex-direction: column; gap: 28px; align-items: center; }
+    .feature-text { width: 100%; }
+    .feature-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--navy); text-transform: uppercase; margin-bottom: 12px; }
+    .feature-text h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+    .feature-text p { font-size: 15px; color: var(--text-sec); line-height: 1.65; margin-bottom: 14px; max-width: 540px; }
+    .feature-text ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .feature-text ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--text); }
+    .feature-visual { display: flex; justify-content: center; align-items: center; }
+
+    /* ── Mini phone ── */
+    .mini-phone { background: #10131f; border-radius: 32px; padding: 8px; box-shadow: 0 20px 40px rgba(16,19,31,0.2), 0 0 0 1px rgba(0,0,0,0.25); width: 230px; margin: 0 auto; }
+    .mini-inner { background: var(--slate); border-radius: 26px; overflow: hidden; height: 430px; display: flex; flex-direction: column; text-align: left; }
+    .mini-inner.dark { background: var(--stage); }
+    .mini-notch { height: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .mini-notch-pill { width: 60px; height: 7px; background: #10131f; border-radius: 999px; }
+    .mini-title { font-size: 13px; font-weight: 700; color: var(--text); text-align: center; padding: 2px 0 7px; }
+    .mini-body { padding: 0 10px 10px; display: flex; flex-direction: column; gap: 7px; flex: 1; overflow: hidden; }
+
+    /* mini: viewfinder */
+    .vf { flex: 1; border-radius: 14px; background: #0B0E18; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .vf-art { width: 130px; height: 100px; border-radius: 4px; position: relative; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    .vf-corner { position: absolute; width: 26px; height: 26px; border: 3px solid var(--amber); }
+    .vf-corner.tl { top: 14px; left: 14px; border-right: 0; border-bottom: 0; border-radius: 6px 0 0 0; }
+    .vf-corner.tr { top: 14px; right: 14px; border-left: 0; border-bottom: 0; border-radius: 0 6px 0 0; }
+    .vf-corner.bl { bottom: 14px; left: 14px; border-right: 0; border-top: 0; border-radius: 0 0 0 6px; }
+    .vf-corner.br { bottom: 14px; right: 14px; border-left: 0; border-top: 0; border-radius: 0 0 6px 0; }
+    .vf-pill { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--amber); color: var(--amber-text); font-size: 10px; font-weight: 700; padding: 5px 12px; border-radius: 999px; white-space: nowrap; }
+
+    /* mini: files/archive */
+    .fs-crumb { font-size: 10px; font-weight: 600; color: var(--text-muted); padding: 2px 2px 4px; }
+    .fs-row { background: white; border-radius: 10px; padding: 9px 10px; display: flex; align-items: center; gap: 9px; box-shadow: var(--shadow); }
+    .fs-icon { width: 26px; height: 22px; border-radius: 4px; background: linear-gradient(to bottom, #6FB6F2, #4C99E8); position: relative; flex-shrink: 0; }
+    .fs-icon::before { content: ""; position: absolute; top: -3px; left: 0; width: 12px; height: 5px; border-radius: 2px 2px 0 0; background: #6FB6F2; }
+    .fs-icon.file { background: white; border: 1px solid var(--border); border-radius: 3px; }
+    .fs-icon.file::before { display: none; }
+    .fs-icon.file::after { content: ""; position: absolute; inset: 4px 5px; background: repeating-linear-gradient(to bottom, var(--border) 0 1.5px, transparent 1.5px 4.5px); }
+    .fs-icon.art1 { border: none; overflow: hidden; }
+    .fs-name { font-size: 11px; font-weight: 600; color: var(--text); line-height: 1.3; }
+    .fs-meta { font-size: 9px; color: var(--text-muted); margin-top: 1px; }
+
+    /* mini: search */
+    .sr-field { background: white; border: 1.5px solid var(--navy); border-radius: 11px; padding: 9px 11px; font-size: 12px; font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 7px; }
+    .sr-field svg { width: 13px; height: 13px; color: var(--text-muted); flex-shrink: 0; }
+    .sr-card { background: white; border-radius: 12px; padding: 9px; display: flex; gap: 9px; align-items: center; box-shadow: var(--shadow); }
+    .sr-thumb { width: 44px; height: 44px; border-radius: 8px; flex-shrink: 0; position: relative; overflow: hidden; }
+    .sr-thumb.cert { background: linear-gradient(135deg, #FDF6E3, #F8ECC8); display: flex; align-items: center; justify-content: center; }
+    .sr-thumb.cert::before { content: ""; width: 18px; height: 18px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 3px #FDF6E3, 0 0 0 4.5px var(--amber); }
+    .sr-title { font-size: 11px; font-weight: 700; color: var(--text); line-height: 1.3; }
+    .sr-meta { display: flex; gap: 5px; align-items: center; margin-top: 4px; }
+    .sr-meta .p-bubble { width: 18px; height: 18px; font-size: 9px; }
+    .sr-meta .yr { font-size: 9px; font-weight: 600; color: var(--text-sec); background: var(--slate-card); padding: 2px 7px; border-radius: 999px; }
+
+    /* mini: voice */
+    .vc-note { background: white; border-radius: 12px; padding: 11px 12px; box-shadow: var(--shadow); }
+    .vc-quote { font-size: 12px; color: var(--text); line-height: 1.5; font-style: italic; }
+    .vc-play { display: flex; align-items: center; gap: 9px; margin-top: 10px; }
+    .vc-btn { width: 28px; height: 28px; border-radius: 50%; background: var(--navy); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .vc-btn::before { content: ""; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 8px solid white; margin-left: 2px; }
+    .vc-wave { display: flex; align-items: center; gap: 2px; flex: 1; height: 22px; }
+    .vc-wave i { width: 3px; border-radius: 2px; background: var(--navy); opacity: 0.5; }
+    .vc-time { font-size: 10px; font-weight: 600; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+    /* ── Privacy (dark) ── */
+    .privacy { background: var(--stage); color: white; }
+    .privacy .section-tag { color: rgba(255,255,255,0.55); }
+    .privacy .section-h2 { color: white; margin-bottom: 14px; }
+    .privacy .section-lede { color: rgba(255,255,255,0.7); margin-bottom: 32px; max-width: 580px; }
+    .privacy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; grid-auto-rows: 1fr; margin-bottom: 24px; }
+    .privacy-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--r-md); padding: 14px; height: 100%; }
+    .privacy-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+    .privacy-card p { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+    .clarify-box { background: rgba(245,166,35,0.1); border: 1px solid rgba(245,166,35,0.4); border-radius: var(--r-lg); padding: 18px 20px; margin-top: 8px; }
+    .clarify-box h4 { font-size: 14px; font-weight: 700; color: white; margin-bottom: 6px; }
+    .clarify-box p { font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.55; }
+
+    /* ── Pricing ── */
+    .pricing { background: var(--card); }
+    .price-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 28px; max-width: 760px; }
+    .price-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-xl); padding: 24px; display: flex; flex-direction: column; }
+    .price-card.hero-card { background: white; border: 2px solid var(--amber); box-shadow: 0 12px 32px rgba(245,166,35,0.18); }
+    .price-name { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-sec); margin-bottom: 8px; }
+    .price-card.hero-card .price-name { color: var(--amber); filter: brightness(0.8); }
+    .price-amount { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 2px; }
+    .price-amount small { font-size: 14px; font-weight: 600; color: var(--text-sec); letter-spacing: 0; }
+    .price-sub { font-size: 13px; color: var(--text-sec); margin-bottom: 16px; }
+    .price-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .price-card ul li { display: flex; gap: 9px; align-items: flex-start; font-size: 14px; color: var(--text); line-height: 1.45; }
+    .price-note { font-size: 13px; color: var(--text-sec); margin-top: 20px; max-width: 620px; line-height: 1.6; }
+
+    /* ── Comparison ── */
+    .compare { background: var(--bg); }
+    .compare-table { background: white; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--border); margin-top: 8px; }
+    .compare-row { display: grid; grid-template-columns: 1fr 1fr; }
+    .compare-row + .compare-row { border-top: 1px solid var(--border-lt); }
+    .compare-row > div { padding: 14px 16px; font-size: 14px; }
+    .compare-row > div + div { border-left: 1px solid var(--border-lt); }
+    .compare-row.head > div { font-weight: 700; font-size: 13px; background: var(--navy-light); color: var(--navy); letter-spacing: 0.02em; }
+    .compare-row.head > div + div { background: var(--bg); color: var(--text-sec); }
+    .compare-row .col-fk { color: var(--text); font-weight: 500; }
+    .compare-row .col-other { color: var(--text-sec); }
+    .compare-close { font-size: 14px; color: var(--text-sec); line-height: 1.6; margin-top: 16px; max-width: 600px; }
+
+    .check { color: var(--success); font-weight: 700; flex-shrink: 0; }
+
+    /* ── FAQ ── */
+    .faq { background: var(--card); }
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-list details { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-md); padding: 14px 16px; }
+    .faq-list details[open] { border-color: var(--navy); background: white; }
+    .faq-list summary { font-size: 15px; font-weight: 600; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: "+"; font-size: 22px; font-weight: 400; color: var(--text-muted); flex-shrink: 0; line-height: 1; }
+    .faq-list details[open] summary::after { content: "−"; color: var(--navy); }
+    .faq-list details p { font-size: 14px; color: var(--text-sec); line-height: 1.6; margin-top: 10px; }
+
+    /* ── Footer CTA ── */
+    .footer-cta { background: var(--bg); text-align: center; }
+    .footer-cta h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 12px; }
+    .footer-cta p { font-size: 15px; color: var(--text-sec); margin: 0 auto 20px; line-height: 1.55; max-width: 520px; }
+
+    /* ── Footer ── */
+    footer { background: var(--stage); color: rgba(255,255,255,0.6); padding: 40px 20px 28px; font-size: 13px; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 28px; }
+    .footer-col h5 { font-size: 14px; font-weight: 700; color: white; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .footer-col p { line-height: 1.55; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul a { color: rgba(255,255,255,0.65); }
+    .footer-col ul a:hover { color: white; }
+    .footer-legal { max-width: 1100px; margin: 28px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.55; }
+
+    /* ── Tablet: 600px+ ── */
+    @media (min-width: 600px) {
+      .trust-strip-grid { grid-template-columns: repeat(4, 1fr); }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .privacy-grid { grid-template-columns: repeat(3, 1fr); }
+      .price-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; }
+      .section-h2 { font-size: 30px; }
+      .hero h1 { font-size: 42px; }
+    }
+
+    /* ── Desktop: 900px+ ── */
+    @media (min-width: 900px) {
+      nav { padding: 0 32px; height: 60px; }
+      .nav-links { display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: var(--text-sec); }
+      .nav-links a:hover { color: var(--text); }
+
+      .hero { padding: 72px 32px 80px; display: grid; grid-template-columns: 1fr auto; gap: 56px; align-items: center; text-align: left; }
+      .hero > div:first-child { max-width: 560px; }
+      .hero h1 { font-size: 50px; letter-spacing: -0.03em; }
+      .hero p { font-size: 17px; }
+      .cta-row { justify-content: flex-start; }
+      .trust-line { margin: 0 0 8px; max-width: none; }
+      .product-clarify { margin: 0; max-width: 540px; }
+      .hero-phones { flex-direction: row; gap: 22px; align-items: flex-start; margin-top: 0; }
+
+      .section-inner { padding: 72px 32px; }
+      .section-h2 { font-size: 34px; margin-bottom: 24px; }
+      .problem .section-h2 { font-size: 38px; margin-bottom: 18px; }
+      .problem p { font-size: 17px; }
+
+      .steps { grid-template-columns: repeat(5, 1fr); gap: 18px; }
+
+      .feature-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+      .feature-row.flip { direction: rtl; }
+      .feature-row.flip > * { direction: ltr; }
+      .feature-text h2 { font-size: 28px; }
+      .feature-text p { font-size: 16px; }
+      .feature-text ul li { font-size: 15px; }
+
+      .footer-cta h2 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 1. NAV                                                       -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-brand">
+    <img src="app-icon-small.png" alt="FamilyKeepsake icon" />
+    <span>Family<b>Keepsake</b></span>
+  </div>
+  <div class="nav-links">
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="#pricing" class="nav-cta">Coming with iOS 27</a>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 2. HERO                                                      -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="hero">
+  <div>
+    <div class="hero-tag">The catalogue for everything your kids create</div>
+    <h1>Everything they make, <em>kept.</em></h1>
+    <p>Point your camera at the painting, the certificate, the Lego build. FamilyKeepsake reads who made it, what it is and when — and files it, a real photo with a readable name, in your family's own iCloud. Findable forever.</p>
+    <div class="cta-row">
+      <span class="soon-chip">Coming to the App&nbsp;Store <small>· with iOS 27</small></span>
+      <a href="#how" class="btn-secondary-link">See how it works →</a>
+    </div>
+    <div class="trust-line">No account. No uploads. No subscription. The AI reads on your device.</div>
+    <div class="product-clarify">Built on Apple Intelligence — needs an iPhone 15 Pro or newer, or an M-series iPad, running iOS 27.</div>
+  </div>
+
+  <div class="hero-phones">
+    <!-- Phone 1: the review card -->
+    <div class="hero-phone-col">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="p-notch"><div class="p-notch-pill"></div></div>
+          <div class="p-title">Review</div>
+          <div class="p-body">
+            <div class="p-art">
+              <div class="art-painting"></div>
+              <div class="art-roof"></div>
+              <div class="art-house"></div>
+              <div class="art-door"></div>
+              <div class="art-sig">Kieran</div>
+            </div>
+            <div class="p-read"><span class="dot"></span>Read on this iPhone in 6 seconds</div>
+            <div class="p-field">
+              <span class="p-field-label">Kid</span>
+              <span class="p-bubble">K</span>
+              <span class="p-field-value">Kieran</span>
+            </div>
+            <div class="p-field">
+              <span class="p-field-label">What</span>
+              <span class="p-chip">Artwork</span>
+              <span class="p-chip" style="background:var(--amber-light);color:var(--amber-text);">Today</span>
+            </div>
+            <div class="p-field">
+              <span class="p-field-label">Desc</span>
+              <span class="p-field-value desc">A crayon house with a red roof under a smiling yellow sun</span>
+            </div>
+            <div class="p-save">Save keepsake</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-caption">It read the signature, dated it, described it. You just tap Save.</div>
+    </div>
+
+    <!-- Phone 2: Rewind -->
+    <div class="hero-phone-col">
+      <div class="phone">
+        <div class="phone-inner dark">
+          <div class="p-notch"><div class="p-notch-pill" style="background:#000;"></div></div>
+          <div class="rw-head">
+            <div class="rw-date">March 2023</div>
+            <div class="rw-count">148 of 212</div>
+          </div>
+          <div class="rw-stage">
+            <div class="rw-card back2"></div>
+            <div class="rw-card back1"></div>
+            <div class="rw-card front">
+              <div class="rw-art">
+                <span class="star" style="top:18%;left:20%;"></span>
+                <span class="star" style="top:32%;left:70%;"></span>
+                <span class="star" style="top:55%;left:14%;"></span>
+                <span class="star" style="top:12%;left:52%;"></span>
+                <span class="star" style="top:64%;left:82%;"></span>
+                <div class="rw-moon"></div>
+                <div class="rw-rocket"></div>
+              </div>
+              <div class="rw-cap">
+                <div class="rw-cap-title">Rocket flying to the moon</div>
+                <div class="rw-cap-sub">Artwork · 2023</div>
+              </div>
+            </div>
+            <div class="rw-rail">
+              <span>2026</span><span>2025</span><span>2024</span><span class="on">2023</span><span>2022</span>
+            </div>
+          </div>
+          <div class="rw-play"></div>
+        </div>
+      </div>
+      <div class="phone-caption">Rewind — flick backwards through the years, one masterpiece at a time.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 3. TRUST STRIP                                               -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="trust-strip">
+  <div class="section-inner">
+    <div class="trust-strip-grid">
+      <div class="trust-strip-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+        <h3>Reads on your device</h3>
+        <p>The AI runs on the iPhone in your hand. Photos are never uploaded — to us or anyone.</p>
+      </div>
+      <div class="trust-strip-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17.5a4.5 4.5 0 0 0-1.9-8.6 6 6 0 0 0-11.6 1.6A4.4 4.4 0 0 0 4 17.5h16z"/></svg>
+        <h3>Your files, your iCloud</h3>
+        <p>Keepsakes are real photos and PDFs in your family's own iCloud Drive — not our cloud.</p>
+      </div>
+      <div class="trust-strip-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-1.2 2.2-2 2.7-.6.4-.9.8-.9 1.8"/><path d="M12 17h.01"/></svg>
+        <h3>One price. Once.</h3>
+        <p>Capture is free forever. One purchase opens bulk import. No subscription, ever.</p>
+      </div>
+      <div class="trust-strip-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg>
+        <h3>No account. No ads.</h3>
+        <p>The app never asks who you are. Nothing is tracked, measured or sold.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 4. PROBLEM                                                   -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="problem" id="problem">
+  <div class="section-inner">
+    <div class="section-tag">The pile</div>
+    <h2 class="section-h2">You can't keep it all. And you can't bin it.</h2>
+    <p>Every week they bring home more: a painting still wet at the corners, a swimming certificate, a Lego spaceship you're not allowed to touch. Some of it makes the fridge door. Most of it goes into a bag in a cupboard, waiting for a wet Sunday that never comes.</p>
+    <p>Photographing it should be the answer — but those photos sink into a camera roll full of screenshots and receipts, unnamed, undated, unfindable. Keeping the memory shouldn't mean typing out who-what-when three hundred times.</p>
+    <p class="bold">FamilyKeepsake makes the photo do the work.</p>
+    <ul>
+      <li><span class="check">✓</span> Photograph it once — it's named, dated and filed</li>
+      <li><span class="check">✓</span> The painting can leave; the keepsake stays</li>
+      <li><span class="check">✓</span> Every word on it is findable, years later</li>
+      <li><span class="check">✓</span> The whole collection plays back in Rewind</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 5. HOW IT WORKS                                              -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-tag">How it works</div>
+    <h2 class="section-h2">From fridge door to family archive, in seconds.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <h3>Add your kids</h3>
+        <p>Names and schools, once. From then on the app works out school and year by itself.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <h3>Point the camera</h3>
+        <p>Artwork and creations by photo; certificates and reports by document scan. One creation at a time — free forever.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <h3>Glance at the card</h3>
+        <p>It has read the signature, the date written on it, and what it is — and drafted a description. Fix anything with a tap, or just hit Save.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <h3>It's a real file now</h3>
+        <p>"Aidan – Certificate – 14 Jun 2025.jpg", in a Certificates folder, in your family's own iCloud Drive.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <h3>Find it. Relive it.</h3>
+        <p>Search any word on it or about it. Or press Rewind and flick back through the years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 6. FEATURE: CAPTURE                                          -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec alt" id="capture">
+  <div class="section-inner">
+    <div class="feature-row">
+      <div class="feature-text">
+        <div class="feature-eyebrow">Capture</div>
+        <h2>Six seconds from fridge door to filed.</h2>
+        <p>Take the photo, and FamilyKeepsake reads the item on the spot — with Apple Intelligence, on the device in your hand. The name they signed. The date scrawled in the corner. Whether it's a certificate or a masterpiece. Which school year — worked out from your family's own timeline, not guessed.</p>
+        <ul>
+          <li><span class="check">✓</span> Reads the signature and matches it to your kids</li>
+          <li><span class="check">✓</span> Never invents a date it can't see</li>
+          <li><span class="check">✓</span><span>Certificates read for what they're <em>for</em> — "1st place, engineering challenge", not "a blue certificate"</span></li>
+          <li><span class="check">✓</span> You review before anything saves — every field is one tap to fix</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <div class="mini-inner">
+            <div class="mini-notch"><div class="mini-notch-pill"></div></div>
+            <div class="mini-title">Take a photo</div>
+            <div class="mini-body">
+              <div class="vf">
+                <div class="vf-corner tl"></div>
+                <div class="vf-corner tr"></div>
+                <div class="vf-corner bl"></div>
+                <div class="vf-corner br"></div>
+                <div class="vf-art">
+                  <div class="art-painting"></div>
+                  <div class="art-roof" style="left:22%;bottom:calc(12% + 30px);border-left-width:22px;border-right-width:22px;border-bottom-width:18px;"></div>
+                  <div class="art-house" style="left:22%;bottom:12%;width:44px;height:30px;"></div>
+                  <div class="art-door" style="left:calc(22% + 16px);bottom:12%;width:11px;height:16px;"></div>
+                  <div class="art-sig" style="font-size:9px;">Kieran</div>
+                </div>
+                <div class="vf-pill">Reading the item…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 7. FEATURE: THE ARCHIVE                                      -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec" id="archive">
+  <div class="section-inner">
+    <div class="feature-row flip">
+      <div class="feature-text">
+        <div class="feature-eyebrow">Your archive</div>
+        <h2>An archive that outlives the app.</h2>
+        <p>Every keepsake is saved as an ordinary photo or PDF with a readable name, foldered by category, in your family's own iCloud Drive. Open them in Files. Copy them anywhere. If FamilyKeepsake vanished tomorrow, your kids' childhood would still be sitting there — organised.</p>
+        <ul>
+          <li><span class="check">✓</span> Real files, readable names — no export required, ever</li>
+          <li><span class="check">✓</span> Each keepsake's facts saved beside it in a plain sidecar file</li>
+          <li><span class="check">✓</span> Syncs through your iCloud to iPhone, iPad and Mac</li>
+          <li><span class="check">✓</span> Delete the app; keep everything</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <div class="mini-inner">
+            <div class="mini-notch"><div class="mini-notch-pill"></div></div>
+            <div class="mini-title">Files</div>
+            <div class="mini-body">
+              <div class="fs-crumb">iCloud Drive › FamilyKeepsake</div>
+              <div class="fs-row"><div class="fs-icon"></div><div><div class="fs-name">Artwork</div><div class="fs-meta">34 items</div></div></div>
+              <div class="fs-row"><div class="fs-icon"></div><div><div class="fs-name">Certificates</div><div class="fs-meta">18 items</div></div></div>
+              <div class="fs-row"><div class="fs-icon"></div><div><div class="fs-name">Reports</div><div class="fs-meta">12 items</div></div></div>
+              <div class="fs-crumb" style="margin-top:4px;">Certificates ›</div>
+              <div class="fs-row"><div class="fs-icon file"></div><div><div class="fs-name">Aidan – Certificate – 14 Jun 2025.jpg</div><div class="fs-meta">JPEG image · 2.1 MB</div></div></div>
+              <div class="fs-row"><div class="fs-icon file"></div><div><div class="fs-name">Kieran – Certificate – 22 Mar 2025.jpg</div><div class="fs-meta">JPEG image · 1.8 MB</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 8. FEATURE: FIND                                             -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec alt" id="find">
+  <div class="section-inner">
+    <div class="feature-row">
+      <div class="feature-text">
+        <div class="feature-eyebrow">Find</div>
+        <h2>Ask for it in your own words.</h2>
+        <p>Every keepsake is findable by every word connected to it — the words printed on it, the words of the story you told about it, the description the AI wrote for it. "Kieran swimming certificate" just… finds it.</p>
+        <ul>
+          <li><span class="check">✓</span><span>Words <em>on</em> it — every certificate, report and scribbled title is read and kept</span></li>
+          <li><span class="check">✓</span><span>Words <em>about</em> it — descriptions and your own notes</span></li>
+          <li><span class="check">✓</span> By kid, by year, by type — or all three at once</li>
+          <li><span class="check">✓</span> No tagging homework — it all happened at capture</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <div class="mini-inner">
+            <div class="mini-notch"><div class="mini-notch-pill"></div></div>
+            <div class="mini-title">Explore</div>
+            <div class="mini-body">
+              <div class="sr-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                kieran swimming
+              </div>
+              <div class="sr-card">
+                <div class="sr-thumb cert"></div>
+                <div>
+                  <div class="sr-title">Freestyle 25m — Learn to Swim award</div>
+                  <div class="sr-meta"><span class="p-bubble">K</span><span class="yr">Certificate</span><span class="yr">2025</span></div>
+                </div>
+              </div>
+              <div class="sr-card">
+                <div class="sr-thumb cert" style="background:linear-gradient(135deg,#EAF6FF,#D2ECFD);"></div>
+                <div>
+                  <div class="sr-title">Swimming sports ribbon — 2nd place</div>
+                  <div class="sr-meta"><span class="p-bubble">K</span><span class="yr">Certificate</span><span class="yr">2024</span></div>
+                </div>
+              </div>
+              <div class="sr-card">
+                <div class="sr-thumb" style="background:linear-gradient(to bottom,#AEDCF2 60%,#2E7CC4 60%);"></div>
+                <div>
+                  <div class="sr-title">Painting of the school pool</div>
+                  <div class="sr-meta"><span class="p-bubble">K</span><span class="yr">Artwork</span><span class="yr">2024</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 9. FEATURE: REWIND                                           -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec" id="rewind">
+  <div class="section-inner">
+    <div class="feature-row flip">
+      <div class="feature-text">
+        <div class="feature-eyebrow">Rewind</div>
+        <h2>Flick back through the years.</h2>
+        <p>Rewind puts the whole collection on a dark stage — newest at the front, the past receding behind. Flick, and a school term flies by. Cross into an earlier year and it announces itself, full screen. It's the shoebox moment, minus the attic.</p>
+        <ul>
+          <li><span class="check">✓</span> One flick = one step back in time</li>
+          <li><span class="check">✓</span> A year rail jumps you straight to 2022</li>
+          <li><span class="check">✓</span> Scope to one kid and watch just their story</li>
+          <li><span class="check">✓</span> Or press play and let it drift</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <div class="mini-inner dark">
+            <div class="mini-notch"><div class="mini-notch-pill" style="background:#000;"></div></div>
+            <div class="rw-head" style="padding-top:0;">
+              <div class="rw-date" style="font-size:15px;">November 2024</div>
+              <div class="rw-count">61 of 212</div>
+            </div>
+            <div class="rw-stage">
+              <div class="rw-card back2" style="width:104px;height:122px;"></div>
+              <div class="rw-card back1" style="width:120px;height:140px;"></div>
+              <div class="rw-card front" style="width:136px;height:170px;">
+                <div class="rw-art" style="background:linear-gradient(135deg,#FDF6E3,#F8ECC8);">
+                  <div style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:34px;height:34px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 5px #FDF6E3,0 0 0 7px var(--amber);"></div>
+                  <div style="position:absolute;bottom:26px;left:16px;right:16px;height:4px;border-radius:2px;background:#D9C9A0;"></div>
+                  <div style="position:absolute;bottom:16px;left:28px;right:28px;height:4px;border-radius:2px;background:#D9C9A0;"></div>
+                </div>
+                <div class="rw-cap">
+                  <div class="rw-cap-title">Cross country — 1st place</div>
+                  <div class="rw-cap-sub">Certificate · 2024</div>
+                </div>
+              </div>
+              <div class="rw-rail">
+                <span>2026</span><span>2025</span><span class="on">2024</span><span>2023</span>
+              </div>
+            </div>
+            <div class="rw-play" style="width:36px;height:36px;margin-bottom:12px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 10. FEATURE: VOICE                                           -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec alt" id="voice">
+  <div class="section-inner">
+    <div class="feature-row">
+      <div class="feature-text">
+        <div class="feature-eyebrow">Voice notes</div>
+        <h2>Their story, in their voice.</h2>
+        <p>Tap the mic while you save and let them explain it: what it is, why the dog is driving the rocket. The recording is kept beside the artwork in your archive; the words are transcribed on the device and become searchable. In ten years, that voice will be worth more than the painting.</p>
+        <ul>
+          <li><span class="check">✓</span> Transcribed on your device, saved word-for-word</li>
+          <li><span class="check">✓</span> The audio file lives beside the artwork, forever</li>
+          <li><span class="check">✓</span> Say it once — find it by those words years later</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <div class="mini-inner">
+            <div class="mini-notch"><div class="mini-notch-pill"></div></div>
+            <div class="mini-title">Rocket flying to the moon</div>
+            <div class="mini-body">
+              <div style="border-radius:12px;overflow:hidden;position:relative;height:130px;flex-shrink:0;box-shadow:var(--shadow);">
+                <div style="position:absolute;inset:0;background:linear-gradient(to bottom,#1B2340,#0F1428);"></div>
+                <div class="rw-moon" style="top:10px;right:12px;width:22px;height:22px;"></div>
+                <div class="rw-rocket" style="bottom:12px;width:28px;height:50px;"></div>
+              </div>
+              <div class="vc-note">
+                <div class="vc-quote">"It's a rocket going to the moon and the dog is driving because the astronaut is having his lunch."</div>
+                <div class="vc-play">
+                  <div class="vc-btn"></div>
+                  <div class="vc-wave">
+                    <i style="height:8px"></i><i style="height:14px"></i><i style="height:19px"></i><i style="height:11px"></i><i style="height:16px"></i><i style="height:7px"></i><i style="height:13px"></i><i style="height:18px"></i><i style="height:9px"></i><i style="height:15px"></i><i style="height:12px"></i><i style="height:6px"></i><i style="height:17px"></i><i style="height:10px"></i><i style="height:14px"></i><i style="height:8px"></i>
+                  </div>
+                  <div class="vc-time">0:23</div>
+                </div>
+              </div>
+              <div class="fs-crumb" style="text-align:center;">Kept beside the artwork · searchable forever</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 11. PRIVACY                                                  -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="privacy" id="privacy">
+  <div class="section-inner">
+    <div class="section-tag">Privacy</div>
+    <h2 class="section-h2">Your kids' things never leave your family.</h2>
+    <p class="section-lede">Most keepsake apps upload your children's work to their cloud and charge you monthly to keep it there. FamilyKeepsake is built the other way around: the AI reads on your device, the files live in your iCloud, and there is no "our cloud" at all.</p>
+    <div class="privacy-grid">
+      <div class="privacy-card">
+        <h4>Nothing uploaded</h4>
+        <p>The reading happens on your iPhone or iPad. It works in flight mode.</p>
+      </div>
+      <div class="privacy-card">
+        <h4>No account</h4>
+        <p>No sign-up, no email, no password. The app never asks who you are.</p>
+      </div>
+      <div class="privacy-card">
+        <h4>Your iCloud, not ours</h4>
+        <p>Files and sync ride on the Apple Account your family already owns.</p>
+      </div>
+      <div class="privacy-card">
+        <h4>No analytics, no ads</h4>
+        <p>The app phones no one. Nothing is tracked, measured or sold.</p>
+      </div>
+      <div class="privacy-card">
+        <h4>No subscription</h4>
+        <p>There are no servers, so there's nothing for a monthly fee to fund.</p>
+      </div>
+      <div class="privacy-card">
+        <h4>About things, not faces</h4>
+        <p>It catalogues what your kids make — the artefacts, not the children.</p>
+      </div>
+    </div>
+    <div class="clarify-box">
+      <h4>Why we can promise this</h4>
+      <p>FamilyKeepsake has no servers. The AI is Apple silicon in your hand; the storage is the iCloud your family already pays for. There is nowhere for your kids' things to go — and that isn't a policy that could change one day. It's the architecture.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 12. PRICING                                                  -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-tag">Pricing</div>
+    <h2 class="section-h2">One price. Once.</h2>
+    <p class="section-lede">Capturing their things as they make them is free forever — full AI, no item caps, no trial clocks. One purchase opens the bulk lanes for everything they've already made.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-name">Free forever</div>
+        <div class="price-amount">$0</div>
+        <div class="price-sub">The kitchen-bench routine, complete.</div>
+        <ul>
+          <li><span class="check">✓</span> Camera and document-scanner capture</li>
+          <li><span class="check">✓</span> Several photos of one creation</li>
+          <li><span class="check">✓</span> Full-quality AI reading — never downgraded</li>
+          <li><span class="check">✓</span> Unlimited keepsakes, search, Rewind, voice notes</li>
+          <li><span class="check">✓</span> No account, no ads</li>
+        </ul>
+      </div>
+      <div class="price-card hero-card">
+        <div class="price-name">The back-catalogue unlock</div>
+        <div class="price-amount">NZ$29.99 <small>one-time</small></div>
+        <div class="price-sub">For the years already in your camera roll.</div>
+        <ul>
+          <li><span class="check">✓</span> Bulk import whole albums from Photos</li>
+          <li><span class="check">✓</span> Import school reports and certificates as PDFs</li>
+          <li><span class="check">✓</span> Share into FamilyKeepsake from any app</li>
+          <li><span class="check">✓</span> The inbox reads it all in the background, ready to review</li>
+          <li><span class="check">✓</span> Yours forever — it's a purchase, not a plan</li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">Why no subscription? Because there's nothing for one to pay for. The AI runs on your device and the files live in your own iCloud — our costs don't grow with your archive, so your price shouldn't either.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 13. COMPARISON                                               -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="compare">
+  <div class="section-inner">
+    <div class="section-tag">Why FamilyKeepsake</div>
+    <h2 class="section-h2">Own the archive. Don't rent it.</h2>
+    <p class="section-lede">Keepsake services have existed for years. They all share two habits: your kids' work lives on their servers, and you pay monthly to keep it there.</p>
+    <div class="compare-table" style="margin-top:24px;">
+      <div class="compare-row head">
+        <div>FamilyKeepsake</div>
+        <div>Keepsake subscription services</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-fk">One purchase, yours forever</div>
+        <div class="col-other">A monthly fee, forever</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-fk">Files in your family's own iCloud</div>
+        <div class="col-other">Photos on their servers, their terms</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-fk">Reads the name, date and school itself</div>
+        <div class="col-other">You type the details in yourself</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-fk">Ordinary files any app can open</div>
+        <div class="col-other">Locked in until you request an export</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-fk">Nothing uploaded, nothing tracked</div>
+        <div class="col-other">Your kids' work in someone's cloud</div>
+      </div>
+    </div>
+    <p class="compare-close">The apps in this category rent you a shoebox. FamilyKeepsake organises the one your family already owns.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 14. FAQ                                                      -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <div class="section-tag">FAQ</div>
+    <h2 class="section-h2">Questions parents ask</h2>
+    <div class="faq-list" style="margin-top:24px;">
+      <details>
+        <summary>Where are my kids' keepsakes stored?</summary>
+        <p>In your family's own iCloud Drive, as ordinary photos and PDFs with readable names, organised into folders by category. FamilyKeepsake has no servers — we couldn't hold your photos if we wanted to.</p>
+      </details>
+      <details>
+        <summary>Does the AI upload my photos anywhere?</summary>
+        <p>No. The reading happens on your iPhone or iPad using Apple Intelligence. It works in flight mode. Nothing is sent to us or anyone else.</p>
+      </details>
+      <details>
+        <summary>What happens if I stop using FamilyKeepsake?</summary>
+        <p>Everything stays. Your keepsakes are ordinary files in your own iCloud Drive — named, foldered, and readable by any app. The archive outlives the app, by design.</p>
+      </details>
+      <details>
+        <summary>Is it a subscription?</summary>
+        <p>No — and it never will be. Capturing one creation at a time is free forever. A single NZ$29.99 purchase unlocks the bulk import lanes. There is no subscription because there are no servers to pay for.</p>
+      </details>
+      <details>
+        <summary>What's free, and what does the unlock buy?</summary>
+        <p>Free forever: capture with the camera or document scanner, photos of one creation, full AI reading, unlimited keepsakes, search, Rewind and voice notes. The one-time unlock opens the bulk lanes: import whole albums from Photos, import school-report PDFs, and share into the app from anywhere.</p>
+      </details>
+      <details>
+        <summary>Which devices does it need?</summary>
+        <p>FamilyKeepsake is built on Apple Intelligence, so it needs iOS 27 on an iPhone 15 Pro or newer, or an iPad with an M-series chip. That's what makes the on-device reading — and the privacy promise — possible.</p>
+      </details>
+      <details>
+        <summary>How does it know which of my kids made something?</summary>
+        <p>Kids sign their work. FamilyKeepsake reads the name — even a wobbly one in a corner — and matches it against your family. A joint creation can belong to more than one child.</p>
+      </details>
+      <details>
+        <summary>What about school reports?</summary>
+        <p>Import them as PDFs. The real multi-page PDF is archived in your iCloud Drive, every page is read, and school, year and term are filled in from your family's school timeline.</p>
+      </details>
+      <details>
+        <summary>What if it reads something wrong?</summary>
+        <p>You always see the card before it saves, and every field can be fixed with a tap. Filenames are never built from AI guesses — only from confirmed facts: child, type and date.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 15. FINAL CTA                                                -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="footer-cta">
+  <div class="section-inner">
+    <h2>The fridge door is temporary.<br/>This isn't.</h2>
+    <p>Everything they make — named, dated, filed and findable, in an archive your family owns outright.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <span class="soon-chip">Coming to the App&nbsp;Store <small>· with iOS 27</small></span>
+      <a href="#how" class="btn-secondary-link">See how it works →</a>
+    </div>
+    <p class="product-clarify" style="margin: 14px auto 0;">Built on Apple Intelligence — needs an iPhone 15 Pro or newer, or an M-series iPad, running iOS 27.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 16. FOOTER                                                   -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h5>FamilyKeepsake</h5>
+      <p>Everything they make, kept. The keepsake catalogue for parents — on-device AI, your family's own iCloud, no subscription.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/support.html">Support</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Trust</h5>
+      <p>No account. No uploads. No analytics. No ads. No subscription. Your family's archive, in your family's iCloud.</p>
+    </div>
+  </div>
+  <div class="footer-legal">
+    FamilyKeepsake stores your family's keepsakes on your devices and in your family's own iCloud. It has no servers and collects no personal information.
+  </div>
+</footer>
+
+</body>
+</html>
