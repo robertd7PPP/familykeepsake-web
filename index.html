@@ -41,6 +41,8 @@
         "@type": "MobileApplication",
         "@id": "https://www.familykeepsake.app/#app",
         "name": "FamilyKeepsake: Kids Creations",
+        "sameAs": "https://apps.apple.com/app/id6787202741",
+        "downloadUrl": "https://apps.apple.com/app/id6787202741",
         "operatingSystem": "iOS 27 and iPadOS 27",
         "applicationCategory": "Photo & Video",
         "description": "Photograph or scan anything your kids make and FamilyKeepsake reads who made it, what it is and when on device. Keepsakes live in your own iCloud, ready to search, revisit in Rewind and turn into print-ready PDF Yearbooks. Free to capture, with a one-time unlock for the full archive and Yearbooks. No subscription.",
@@ -158,15 +160,10 @@
       box-shadow: 0 4px 16px rgba(245,166,35,0.35);
     }
 
-    /* ── Coming-soon chip ── */
-    .soon-chip {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--amber); color: var(--amber-text);
-      padding: 12px 22px; border-radius: var(--r-md);
-      font-size: 15px; font-weight: 700;
-      box-shadow: 0 6px 20px rgba(245,166,35,0.4);
-    }
-    .soon-chip small { font-weight: 600; opacity: 0.75; }
+    /* ── Official App Store badge ── */
+    .app-store-link { display: inline-flex; padding: 12px; }
+    .app-store-link img { display: block; width: auto; height: 48px; }
+    .app-store-link:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; border-radius: 4px; }
 
     /* ── Hero ── */
     .hero { max-width: 1100px; margin: 0 auto; padding: 48px 20px 52px; text-align: center; }
@@ -388,7 +385,7 @@
     <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
   </div>
-  <a href="#pricing" class="nav-cta">Coming with iOS 27</a>
+  <a href="https://apps.apple.com/app/id6787202741" class="nav-cta">Download</a>
 </nav>
 
 <!-- ════════════════════════════════════════════════════════════ -->
@@ -400,7 +397,7 @@
     <h1>Everything they make, <em>kept.</em></h1>
     <p>Point your camera at the painting, the certificate, the Lego build. FamilyKeepsake reads who made it, what it is and when - on your device - then files it as a real photo with a readable name in your family's own iCloud. Search it, revisit it in Rewind, or turn years of creations into a book.</p>
     <div class="cta-row">
-      <span class="soon-chip">Coming to the App&nbsp;Store <small>· with iOS 27</small></span>
+      <a class="app-store-link" href="https://apps.apple.com/app/id6787202741"><img src="images/app-store-badge.svg" alt="Download on the App Store" width="144" height="48" /></a>
       <a href="/watch/" class="btn-secondary-link">Watch the 82-second overview →</a>
     </div>
     <a class="hero-facebook" href="https://www.facebook.com/profile.php?id=61593134020857" target="_blank" rel="noopener noreferrer">
@@ -889,7 +886,7 @@
     <h2>The fridge door is temporary.<br/>This isn't.</h2>
     <p>Everything they make - named, dated, filed and findable, in an archive your family owns outright.</p>
     <div class="cta-row" style="justify-content:center;">
-      <span class="soon-chip">Coming to the App&nbsp;Store <small>· with iOS 27</small></span>
+      <a class="app-store-link" href="https://apps.apple.com/app/id6787202741"><img src="images/app-store-badge.svg" alt="Download on the App Store" width="144" height="48" /></a>
       <a href="/watch/" class="btn-secondary-link">Watch the 82-second overview →</a>
     </div>
     <p class="product-clarify" style="margin: 14px auto 0;">Built on Apple Intelligence - needs iOS or iPadOS 27 on an iPhone 15 Pro or newer, or an M-series iPad.</p>
